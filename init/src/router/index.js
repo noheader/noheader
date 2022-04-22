@@ -1,0 +1,50 @@
+//配置信息
+import {createRouter,createWebHashHistory} from "vue-router";
+const router=createRouter({
+history:createWebHashHistory(),
+// 配置路由地址
+routes:[
+    //首页地址
+{
+    path:"/",
+    name:"home",
+    component:()=>import("../view/Home.vue")
+},
+{
+    path:"/index",
+    name:"index",
+    component:()=>import("../view/index.vue")
+},
+{
+    path:"/family",
+    name:"family",
+    component:()=>import("../view/family.vue")
+},
+{
+    path:"/qianyue",
+    name:"qianyue",
+    component:()=>import("../view/qianyue.vue")
+},
+{
+    path:"/jieguo",
+    name:"jieguo",
+    component:()=>import("../view/jieguo.vue")
+},
+{
+    path:"/daichuli",
+    name:"daichuli",
+    component:()=>import("../view/daichuli.vue")
+},
+{
+    path:"/qianyueshen",
+    name:"qianyueshen",
+    component:()=>import("../view/qianyueshen.vue")
+},
+{
+    path:"/daizhifu",
+    name:"daizhifu",
+    component:()=>import("../view/daizhifu.vue")
+},
+],
+})
+export default router;
